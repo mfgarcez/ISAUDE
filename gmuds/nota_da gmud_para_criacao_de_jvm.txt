@@ -1,0 +1,41 @@
+Cliente: SECRETARIA DE ESTADO DA SAUDE DE SAO PAULO
+Sistema: S4SP - INTEGRACAO JAVA
+
+Descrição detalhada da atividade: 
+Aumentar a capacidade de memoria para cada um dos servers no JBoss de produção, 
+Executar os comandos abaixo:
+###################################################################################################
+export JBOSS_HOME=/opt/jboss
+$JBOSS_HOME/bin/jboss-cli.sh -c --controller=10.200.175.104:9990 --command="/host=miguelleao-jb2/server-config=jb2-jvm01/jvm=jb2-jvm01-jvm:add(heap-size=512m, max-heap-size=4096m, jvm-options=[\"-server\",\"-XX:MetaspaceSize=256m\",\"-XX:MaxMetaspaceSize=1024m\"])"
+$JBOSS_HOME/bin/jboss-cli.sh -c --controller=10.200.175.104:9990 --command="/host=miguelleao-jb2/server-config=jb2-jvm01:restart"
+# Exedcutar abaixo apenas no sucesso da linha acima, mesmo com warn deprecation
+$JBOSS_HOME/bin/jboss-cli.sh -c --controller=10.200.175.104:9990 --command="/host=Miguelleao-jb1/server-config=jb1-jvm01/jvm=jb1-jvm01-jvm:add(heap-size=512m, max-heap-size=4096m, jvm-options=[\"-server\",\"-XX:MetaspaceSize=256m\",\"-XX:MaxMetaspaceSize=1024m\"])"
+$JBOSS_HOME/bin/jboss-cli.sh -c --controller=10.200.175.104:9990 --command="/host=Miguelleao-jb1/server-config=jb1-jvm01:restart"
+###################################################################################################
+
+
+Há restrição de Data/Hora para a execução? NÃO 
+Sistema Operacional: LINUX                           
+Tipo: JBoss
+
+Esta Mudança tem dependência de outra Mudança? NÃO 
+Em caso de erro na execução poderá ser aplicado o Plano de volta? NÃO 
+Justificativa: Não há necessidade.
+
+Analistas a serem acionados em caso de problemas:  MARCELO EIJI MITSHASHI - 11 98166-1209; 
+
+Foram executados testes em Homologação? NÃO 
+Justificativa: Ambiente de produção requer mais memória.
+
+Esta mudança foi demandada pelo cliente? NÃO 
+Esta mudança precisa ser feita durante o horário comercial? SIM                               
+Esta mudança pode ser revertida facilmente? SIM                               
+Qual o risco de indisponibilidade? Baixo
+
+
+Servidores: MIGUELLEAO-JB1; MIGUELLEAO-JB2; 
+
+
+Informação adicional: Enviar para Luciano Gomes
+
+Nas duas maquinas

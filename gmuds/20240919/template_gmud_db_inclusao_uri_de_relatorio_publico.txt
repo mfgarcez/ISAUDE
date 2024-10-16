@@ -1,0 +1,66 @@
+Restrição de Data: 03/06/2024
+Restrição de Horário: 09:00 até 12:00
+
+Cliente: Saúde
+Sistema: ISaude / S4SP Integração Java
+
+---------------------------------------------------------------------------------------
+ATENÇÃO:
+PRODUÇÃO ==> N2 = Aprovação do Comitê Gerencial.
+HOMOLOGAÇÃO ==> N1 = Aprovação do coordenador
+---------------------------------------------------------------------------------------
+Descreva as atividades dessa mudança:
+
+1- Executar os arquivos por ordem de nome que estão no anexo zip
+
+
+---------------------------------------------------------------------------------------
+Esta mudança tem dependência de outra mudança? Se sim, qual?
+Não
+
+--------------------------------------------------------------------------
+Em caso de erro na execução poderá ser aplicado o plano de volta?  Sim ( )   Não (X)
+Se não, informar o motivo: A inclusão de colunas na tabela não ira alterar a funcionalidade da aplicação.
+
+O plano de volta está descrito no procedimento?  Sim ( )   Não (X)  
+Se não, descrever o plano de volta: A inclusão de colunas na tabela não ira alterar a funcionalidade da aplicação.
+
+---------------------------------------------------------------------------------------
+Nome dos Analistas a serem acionados em caso de problemas: José Wdison de Souza
+Número do celular: (11) 98315-0718
+
+---------------------------------------------------------------------------------------
+Informação Adicional:
+
+*****************************************************************************************************************************************************************************************
+
+Informar os requisitos listados abaixo para avaliação do Comitê Consultivo de Mudanças - CCM válidos somente para mudanças de ambiente de Produção de sistemas críticos, muito críticos e hipercríticos. 
+
+• Haverá impacto nos sistemas / serviços diretos, dependentes e vinculados?
+Não
+
+• Qual o tempo máximo de indisponibilidade?
+Não ficará indisponível com a execução do script.
+
+• Qual o nível de risco, falhas e/ou problemas associados à implementação da mudança?
+Baixo.
+
+• Há plano de contingência imediato objetivando disponibilidade do serviço?
+Não há necessidade
+
+• Quais os recursos necessários para implementação da mudança (recurso técnico, ativos de hardware/software e outros recursos necessários? 
+Recurso técnico expecializado ou esteira de execução simples.
+
+• Responsável / líder pelo acompanhamento da implementação da mudança?
+Marcelo Fernandes Garcez
+• Responsável(is) pela validação e testes da mudança? 
+José Wdison de Souza
+• Informar a evidência de testes e homologação em ambiente “não-produtivo”. 
+Resultado de execução em dev: Procedimento PL/SQL concluído com sucesso.
+• Revisão por pares, se necessário, para recursos / sistemas sem ambiente de testes / homologação. Deverá ser anexada documentação de validação/revisão de um par da equipe com proficiência no objeto da mudança. 
+Script revisado pela equipe.
+• Alteração / documentação na documentação do RunBook, como procedimentos de recuperação, “escalation list”, revisão nas ferramentas de observabilidade (alteração, inclusão e exclusão de alarmes, threshold, orientações etc).
+Não informado
+IMPORTANTE: o preenchimento dessas informações é obrigatório e a sua validade é responsabilidade do solicitante. A ausência ou inconsistência das informações implicará em rejeição da GMUD por parte do Comitê Consultivo.
+
+***********************************************************************************************************************************************************************************************
