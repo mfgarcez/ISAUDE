@@ -6,9 +6,9 @@ declare
 
     v_usuario varchar2(30):= 'cejam_hefr_wl';
     v_nome varchar2(100):= 'Hospital Estadual Franco da Rocha';
-    v_senha varchar2(30):= 'css!chm8winh';
+    v_senha varchar2(30):= 'cej!hefr11wl';
     v_dept_cd varchar2(30):= '11';
-    v_login_cd varchar2(30):= 'css:chm_winh';
+    v_login_cd varchar2(30):= 'cejam:hefr_wl';
 	v_email varchar(100):= 'jwsouza@apoioprodesp.sp.gov.br';
 	
 	V_MAX_ID NUMBER := 0;
