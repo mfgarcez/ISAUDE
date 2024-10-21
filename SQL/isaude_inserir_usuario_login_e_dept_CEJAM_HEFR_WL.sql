@@ -1,4 +1,4 @@
---@STATEMENT
+-- @STATEMENT
 declare
 	-- A OS é CEJAM, o sistema é WL e a unidade é Hospital Estadual Franco da Rocha.
 	-- CEJAM_HEFR_WL
@@ -9,7 +9,7 @@ declare
     v_senha varchar2(30):= 'cej!hefr11wl';
     v_dept_cd varchar2(30):= '11';
     v_login_cd varchar2(30):= 'cejam:hefr_wl';
-	v_email varchar(100):= 'jwsouza@apoioprodesp.sp.gov.br';
+	v_email varchar(100):= 'mfgarcez@sp.gov.br';
 	
 	V_MAX_ID NUMBER := 0;
 	
