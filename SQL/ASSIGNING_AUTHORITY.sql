@@ -7,6 +7,7 @@ LEFT JOIN ACCESS_CONTROL.ac_contact_type CT ON CT.id = c.id_type
 LEFT JOIN ACCESS_CONTROL.ac_user_dept UD ON ud.id_user = u.id
 LEFT JOIN ACCESS_CONTROL.ac_department D ON d.id = ud.id_dept
 where c.id_dept is not null
+order by c.id_dept desc
 ;
 
 UPDATE ACCESS_CONTROL.AC_LOGIN
