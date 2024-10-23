@@ -1,8 +1,8 @@
 --@STATEMENT
 declare
-	-- A OS é CSS, o sistema é WinHosp e a unidade é Conjunto Hospitalar do Mandaqui.
-	-- CSS-CHM-WINH
-	-- CSS:CHM_WINH
+	-- A OS é fuabc, o sistema é mv e a unidade é Hospital Estadual Mario Covas.
+	-- FUABC_HEMC_MV
+	-- FUABC:HEMC_MV
     v_usuario varchar2(30):= 'fuabc_hemc_mv';
     v_nome varchar2(100):= 'Hospital Estadual Mario Covas';
     v_senha varchar2(30):= 'fuabc!hemc10mv';
