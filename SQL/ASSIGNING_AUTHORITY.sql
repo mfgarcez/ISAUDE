@@ -1,4 +1,5 @@
-SELECT * --L.ID ID_LOGIN, l.login, L.PASSWORD, l.status STATUS_LOGIN, U.ID ID_USER, u.name NAME_USER ,u.status STATUS_USER, P.ID ID_PROVIDER, p.name,P.CD CD_PROVIDER, p.status STATUS_PRIV, c.cd CD_CONTACT, ct.cd CD_CONTACTTYPE,d.name NAME_DEPT,D.CD CD_DEPT
+SELECT  --L.ID ID_LOGIN, l.login, L.PASSWORD, l.status STATUS_LOGIN, U.ID ID_USER, u.name NAME_USER ,u.status STATUS_USER, P.ID ID_PROVIDER, p.name,P.CD CD_PROVIDER, p.status STATUS_PRIV, c.cd CD_CONTACT, ct.cd CD_CONTACTTYPE,d.name NAME_DEPT,D.CD CD_DEPT
+l.id ,  l.login, 'senha', c.id_dept, l.CD cd_login, l.password
 FROM ACCESS_CONTROL.AC_LOGIN L
 LEFT JOIN ACCESS_CONTROL.AC_USER U ON u.id = l.id_user
 LEFT JOIN ACCESS_CONTROL.AC_PROVIDER P ON P.id = l.id_provider
